@@ -1,0 +1,17 @@
+run: main.o bai1.o bai2.o bai10.o bai11.o
+	gcc main.o bai1.o bai2.o bai10.o bai11.o -o run
+
+main.o: main.c mylib.h
+	gcc -c main.c
+
+bai1.o: bai1.c mylib.h
+	gcc -c bai1.c
+
+bai2.o: bai2.c mylib.h
+	gcc -c bai2.c
+
+bai10.o: bai10.c mylib.h
+	gcc -c bai10.c
+
+bai11.o: bai11.c mylib.h
+	gcc -c bai11.c
